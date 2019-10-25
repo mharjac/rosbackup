@@ -9,14 +9,14 @@ grade: stable
 base: core18
 
 parts:
-  pfbackup:
+  rosbackup:
     plugin: python
     python-version: python3
     source: https://github.com/mharjac/rosbackup.git
     source-type: git
 
 apps:
-  pfbackup:
+  rosbackup:
     command: bin/rosbackup
     plugs:
       - network
