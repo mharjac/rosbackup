@@ -1,0 +1,26 @@
+name: rosbackup
+version: '1.0.0'
+summary: RouterOS config backup tool
+description: |
+  Simple utility for backing up RouterOS configuration.
+
+confinement: strict
+grade: stable
+base: core18
+
+parts:
+  pfbackup:
+    plugin: python
+    python-version: python3
+    source: https://github.com/mharjac/rosbackup.git
+    source-type: git
+
+apps:
+  pfbackup:
+    command: bin/rosbackup
+    plugs:
+      - network
+      - home
+    environment:
+      LANG: C.UTF-8
+
