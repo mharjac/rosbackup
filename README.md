@@ -48,8 +48,9 @@ It can also be used for unattended backups (e.g., in containers), in which case,
 * ROS_HOST: for storing IP address or hostname (e.g., 192.168.1.1)
 * ROS_USER: username for making backups
 * ROS_PASS: password for provided username
+* ROS_DELAY: execution delay between commands (optional; required on older devices; default 5)
 ```
-export ROS_HOST="192.168.1.1" ROS_USER="user1" ROS_PASS="passw0rd"
+export ROS_HOST="192.168.1.1" ROS_USER="user1" ROS_PASS="passw0rd" ROS_DELAY="3"
 rosbackup
 ```
 When executed in unattended mode, configuration backup will be saved in execution directory as `config-{time_stamp}.cfg`.

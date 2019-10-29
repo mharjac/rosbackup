@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="rosbackup",
-    version="1.0.0",
+    version="1.1.0",
     author="Mario Harjac",
     author_email="m@harja.ch",
     description="RouterOS config backup tool",

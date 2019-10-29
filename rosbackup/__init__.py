@@ -15,5 +15,5 @@ not provided. Config will be printed to the stdout if -f (--file) omitted.
 from rosbackup.rosdevice import ROSDevice
 
 
-__version__ = '1.0.0'
+__version__ = '1.1.0'
 __all__ = ('ROSDevice')
